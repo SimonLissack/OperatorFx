@@ -13,3 +13,20 @@ public class V1CustomResourceStatus
 {
     List<V1Condition> Conditions { get; set; } = new();
 }
+
+[AttributeUsage(AttributeTargets.Class)]
+public class CustomResourceEntityAttribute(string scope = CustomResourceValues.Scope.Namespaced, bool served = true, bool storage = true) : Attribute
+{
+    public string Scope { get; } = scope;
+    public bool Served { get; } = served;
+    public bool Storage { get; } = storage;
+}
+
+public static class CustomResourceValues
+{
+    public static class Scope
+    {
+        public const string Namespaced = nameof(Namespaced);
+        public const string Cluster = nameof(Cluster);
+    }
+}

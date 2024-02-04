@@ -1,0 +1,6 @@
+@OperatorFxNetHost_HostAddress = http://localhost:5185
+
+GET {{OperatorFxNetHost_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

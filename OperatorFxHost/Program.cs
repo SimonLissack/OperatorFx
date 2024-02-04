@@ -1,9 +1,17 @@
+using OperatorFx.Infrastructure.DependencyInjection;
+using OperatorFx.Infrastructure.Services;
+using OperatorFxHost;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services
+    .AddInfrastructure()
+    .AddHostedService<WatcherService<V1CronTab>>();
 
 var app = builder.Build();
 

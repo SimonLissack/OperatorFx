@@ -1,6 +1,6 @@
 ﻿using k8s;
 
-namespace OperatorFxNet.Infrastructure.Abstractions;
+namespace OperatorFx.Infrastructure.Abstractions;
 
 public interface IKubernetesClientFactory
 {

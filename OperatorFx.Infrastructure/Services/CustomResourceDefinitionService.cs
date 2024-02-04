@@ -1,8 +1,8 @@
 ﻿using System.Reflection;
 using k8s.Models;
-using OperatorFxNet.Domain.Models;
+using OperatorFx.Domain.Models;
 
-namespace OperatorFxNet.Infrastructure.Services;
+namespace OperatorFx.Infrastructure.Services;
 
 public class CustomResourceDefinitionService
 {

@@ -1,9 +1,9 @@
 ﻿using k8s;
 using Microsoft.Extensions.Options;
-using OperatorFxNet.Infrastructure.Abstractions;
-using OperatorFxNet.Infrastructure.Configuration;
+using OperatorFx.Infrastructure.Abstractions;
+using OperatorFx.Infrastructure.Configuration;
 
-namespace OperatorFxNet.Infrastructure.Services;
+namespace OperatorFx.Infrastructure.Services;
 
 public class KubernetesClientFactory : IKubernetesClientFactory
 {

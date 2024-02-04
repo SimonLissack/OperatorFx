@@ -1,7 +1,7 @@
 ﻿using k8s.Models;
-using OperatorFxNet.Domain.Models;
+using OperatorFx.Domain.Models;
 
-namespace OperatorFxNetHost;
+namespace OperatorFxHost;
 
 [KubernetesEntity(ApiVersion = "v1", Kind = "SampleCustomResource", Group = "lissack.io", PluralName = "samplecustomresources")]
 public class SampleCustomResource : CustomResource

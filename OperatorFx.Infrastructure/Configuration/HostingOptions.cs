@@ -1,4 +1,4 @@
-﻿namespace OperatorFxNet.Infrastructure.Configuration;
+﻿namespace OperatorFx.Infrastructure.Configuration;
 
 public class HostingOptions
 {

@@ -1,10 +1,10 @@
 ﻿using k8s;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using OperatorFxNet.Infrastructure.Abstractions;
-using OperatorFxNet.Infrastructure.Configuration;
+using OperatorFx.Infrastructure.Abstractions;
+using OperatorFx.Infrastructure.Configuration;
 
-namespace OperatorFxNet.Infrastructure.DependencyInjection;
+namespace OperatorFx.Infrastructure.DependencyInjection;
 
 public static class InfrastructureInstallerExtensions
 {

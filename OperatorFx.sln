@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorFxNetHost", "OperatorFxNetHost\OperatorFxNetHost.csproj", "{315E4260-8F50-4388-A5B7-76F678E88DC7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorFxHost", "OperatorFxHost\OperatorFxHost.csproj", "{315E4260-8F50-4388-A5B7-76F678E88DC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorFxNet.Infrastructure", "OperatorFxNet.Infrastructure\OperatorFxNet.Infrastructure.csproj", "{DF9CCC7E-689D-425E-9663-91313D5B8F82}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorFx.Infrastructure", "OperatorFx.Infrastructure\OperatorFx.Infrastructure.csproj", "{DF9CCC7E-689D-425E-9663-91313D5B8F82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorFxNet.Domain", "OperatorFxNet.Domain\OperatorFxNet.Domain.csproj", "{D8A89952-EACB-4DA8-B861-67211C99C1E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorFx.Domain", "OperatorFx.Domain\OperatorFx.Domain.csproj", "{D8A89952-EACB-4DA8-B861-67211C99C1E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorFxNet.Tests", "OperatorFxNet.Tests\OperatorFxNet.Tests.csproj", "{43C4F83A-85BB-4F18-BE6E-C6F3028C4DE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorFx.Tests", "OperatorFx.Tests\OperatorFx.Tests.csproj", "{43C4F83A-85BB-4F18-BE6E-C6F3028C4DE7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5496D28E-2139-4155-B9A9-C33EA41AA6F6}"
 EndProject

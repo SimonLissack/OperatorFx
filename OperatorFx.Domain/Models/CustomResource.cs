@@ -1,7 +1,7 @@
 ﻿using k8s;
 using k8s.Models;
 
-namespace OperatorFxNet.Domain.Models;
+namespace OperatorFx.Domain.Models;
 
 public class CustomResource : KubernetesObject, IKubernetesObject<V1ObjectMeta>
 {

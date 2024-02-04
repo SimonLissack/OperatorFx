@@ -17,7 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\OperatorFxNet.Domain\OperatorFxNet.Domain.csproj" />
+      <ProjectReference Include="..\OperatorFx.Domain\OperatorFx.Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>

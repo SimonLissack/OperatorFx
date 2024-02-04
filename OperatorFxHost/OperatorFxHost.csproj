@@ -20,7 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\OperatorFxNet.Infrastructure\OperatorFxNet.Infrastructure.csproj" />
+      <ProjectReference Include="..\OperatorFx.Infrastructure\OperatorFx.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

@@ -2,10 +2,10 @@
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using OperatorFxNet.Domain.Models;
-using OperatorFxNet.Infrastructure.Configuration;
+using OperatorFx.Domain.Models;
+using OperatorFx.Infrastructure.Configuration;
 
-namespace OperatorFxNet.Infrastructure.Services;
+namespace OperatorFx.Infrastructure.Services;
 
 public class WatcherService<T>(ILogger<WatcherService<T>> logger, IOptions<HostingOptions> hostingOptions, IKubernetes kubernetes) : BackgroundService where T : CustomResource
 {

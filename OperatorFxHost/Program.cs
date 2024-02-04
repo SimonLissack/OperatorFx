@@ -10,7 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services
-    .AddInfrastructure()
+    .AddHosting<V1CronTab>()
     .AddHostedService<WatcherService<V1CronTab>>();
 
 var app = builder.Build();

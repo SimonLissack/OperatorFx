@@ -13,5 +13,7 @@ public class V1CronTab : CustomResource
 
 public class V1CronTabSpec
 {
-
+    public string CronSpec { get; set; } = string.Empty;
+    public string Image { get; set; } = string.Empty;
+    public int Replicas { get; set; } = 0;
 }

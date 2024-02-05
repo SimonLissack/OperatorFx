@@ -38,10 +38,7 @@ public class WatcherService<T>(ILogger<WatcherService<T>> logger, IOptions<Hosti
 
         await foreach (var watchEvent in watcher)
         {
-            await publisher.Publish(new KubernetesWatchEvent<T>
-            {
-                Type = watchEvent.Item1
-            }, stoppingToken);
+            await publisher.Publish(watchEvent.ToNotification(), stoppingToken);
         }
     }
 }

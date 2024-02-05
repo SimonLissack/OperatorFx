@@ -4,5 +4,5 @@ namespace OperatorFx.Infrastructure.Abstractions;
 
 public interface IKubernetesClientFactory
 {
-    IKubernetes Create();
+    Kubernetes Create();
 }

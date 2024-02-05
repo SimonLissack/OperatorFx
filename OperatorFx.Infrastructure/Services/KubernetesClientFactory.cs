@@ -8,15 +8,15 @@ namespace OperatorFx.Infrastructure.Services;
 public class KubernetesClientFactory : IKubernetesClientFactory
 {
     readonly HostingOptions _hostingOptions;
-    readonly Lazy<IKubernetes> _kubernetes;
+    readonly Lazy<Kubernetes> _kubernetes;
 
     public KubernetesClientFactory(IOptions<HostingOptions> options)
     {
         _hostingOptions = options.Value;
-        _kubernetes = new Lazy<IKubernetes>(() => new Kubernetes(CreateConfiguration()));
+        _kubernetes = new Lazy<Kubernetes>(() => new Kubernetes(CreateConfiguration()));
     }
 
-    public IKubernetes Create() => _kubernetes.Value;
+    public Kubernetes Create() => _kubernetes.Value;
 
     KubernetesClientConfiguration CreateConfiguration() => string.IsNullOrEmpty(_hostingOptions.KubeConfig)
         ? KubernetesClientConfiguration.BuildDefaultConfig()

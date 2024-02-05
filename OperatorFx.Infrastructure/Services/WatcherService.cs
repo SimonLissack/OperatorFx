@@ -23,6 +23,27 @@ public class WatcherService<T>(ILogger<WatcherService<T>> logger, IOptions<Hosti
             logger.LogInformation("Installing Custom Resource Definition");
         }
 
+        while (!stoppingToken.IsCancellationRequested)
+        {
+            try
+            {
+                await WatchResource(stoppingToken);
+            }
+            catch (Exception e)
+            {
+                if (stoppingToken.IsCancellationRequested)
+                {
+                    logger.LogInformation(e, "Watcher threw and exception, it will not continue due to cancellation token being cancelled");
+                }
+                logger.LogInformation(e, "Watcher threw and exception, attempting to restart");
+            }
+        }
+
+        logger.LogInformation("Watcher service for resource type {ResourceType} stopping", typeof(T).Name);
+    }
+
+    async Task WatchResource(CancellationToken stoppingToken)
+    {
         var k8sAttributes = typeof(T).GetCustomAttribute<KubernetesEntityAttribute>()!;
 
         var resourceClient = new GenericClient(kubernetes, k8sAttributes.Group, k8sAttributes.ApiVersion, k8sAttributes.PluralName, disposeClient: false);
@@ -38,6 +59,5 @@ public class WatcherService<T>(ILogger<WatcherService<T>> logger, IOptions<Hosti
             }, stoppingToken);
         }
 
-        logger.LogInformation("Watcher service for resource type {ResourceType} stopping", typeof(T).Name);
     }
 }

@@ -17,7 +17,7 @@ public static class InfrastructureInstallerExtensions
 
         services
             .AddSingleton<IKubernetesClientFactory, KubernetesClientFactory>()
-            .AddSingleton<IKubernetes>(s => s.GetService<IKubernetesClientFactory>()!.Create())
+            .AddSingleton<Kubernetes>(s => s.GetService<IKubernetesClientFactory>()!.Create())
             .AddMediatR(c => c
                 .RegisterServicesFromAssemblies(callerAssembly, infrastructureAssembly)
             );

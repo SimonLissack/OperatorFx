@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using OperatorFx.Infrastructure.Eventing;
 
-namespace OperatorFxHost.Eventing;
+namespace OperatorFx.Sample.Eventing;
 
 public class CronTabEventHandler(ILogger<CronTabEventHandler> logger) :
     INotificationHandler<CustomResourceAdded<V1CronTab>>,

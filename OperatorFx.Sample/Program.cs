@@ -1,6 +1,6 @@
 using OperatorFx.Infrastructure.DependencyInjection;
 using OperatorFx.Infrastructure.Services;
-using OperatorFxHost;
+using OperatorFx.Sample;
 
 var builder = WebApplication.CreateBuilder(args);
 

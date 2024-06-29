@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorFxHost", "OperatorFxHost\OperatorFxHost.csproj", "{315E4260-8F50-4388-A5B7-76F678E88DC7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorFx.Sample", "OperatorFx.Sample\OperatorFx.Sample.csproj", "{315E4260-8F50-4388-A5B7-76F678E88DC7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorFx.Infrastructure", "OperatorFx.Infrastructure\OperatorFx.Infrastructure.csproj", "{DF9CCC7E-689D-425E-9663-91313D5B8F82}"
 EndProject

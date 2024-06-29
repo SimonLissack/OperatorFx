@@ -1,7 +1,7 @@
 ﻿using k8s.Models;
 using OperatorFx.Domain.Models;
 
-namespace OperatorFxHost;
+namespace OperatorFx.Sample;
 
 // https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#create-a-customresourcedefinition
 [KubernetesEntity(ApiVersion = "v1", Kind = "CronTab", Group = "stable.example.com", PluralName = "crontabs")]
